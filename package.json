@@ -1,0 +1,34 @@
+{
+  "name": "p5js-recorder",
+  "version": "0.0.1",
+  "description": "the p5.js recroder",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nagayama/p5js-recorder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nagayama/p5js-recorder/issues"
+  },
+  "homepage": "https://github.com/nagayama/p5js-recorder#readme",
+  "devDependencies": {
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.3",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "codemirror": "^5.52.2",
+    "react": "^16.13.1",
+    "react-codemirror2": "^7.1.0",
+    "react-dom": "^16.13.1"
+  }
+}
