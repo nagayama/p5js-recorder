@@ -39,7 +39,6 @@ const App = () => {
     await previewSketch();
     setIsRecording(true);
     stream.current = iframe.current.contentWindow.p.canvas.captureStream(0);
-    iframe.current.contentWindow.p.canvas.style.visibility = "hidden";
     chunks.current = [];
     recorder.current = new MediaRecorder(stream.current, {
       videoBitsPerSecond: bitRate * 1000,

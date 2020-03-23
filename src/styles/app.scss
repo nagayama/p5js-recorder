@@ -21,6 +21,7 @@ button {
 #app {
   height: 100%;
   display: grid;
+  gap: 1px;
   grid-template-columns: 50% 1fr;
   grid-template-rows: 50px 1fr 1fr;
   grid-template-areas:
@@ -57,11 +58,19 @@ header {
 .sketch {
   grid-area: sketch;
   position: relative;
+  background: #263238;
+  .react-codemirror2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 0;
+  }
   .CodeMirror {
     height: 100%;
     font-family: "Lucida Console", Monaco, monospace;
     font-size: 0.9rem;
-    padding: 2rem 0;
   }
 }
 
