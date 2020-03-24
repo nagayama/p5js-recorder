@@ -21,27 +21,41 @@ button {
 #app {
   height: 100%;
   display: grid;
-  gap: 1px;
   grid-template-columns: 50% 1fr;
-  grid-template-rows: 50px 1fr 1fr;
+  grid-template-rows: 1.5rem 50px 1fr 1fr;
   grid-template-areas:
+    "title title"
     "header header"
     "sketch  preview"
     "sketch  video";
 }
 
+h1 {
+  grid-area: title;
+  margin: 0;
+  font-size: 0.6rem;
+  line-height: 1.5rem;
+  padding: 0 1rem;
+  background: #111;
+  border-bottom: 1px solid #222;
+}
+
 header {
   grid-area: header;
-  align-self: stretch;
   display: flex;
-  align-items: center;
+  line-height: 50px;
+  border-bottom: 1px solid #222;
 }
 
 .header_item {
   border-right: 1px solid #222;
   padding: 0 1rem;
+  vertical-align: middle;
   button {
+    height: calc(100% - 10px);
+    margin: 5px 0;
     padding: 2px 10px;
+    vertical-align: middle;
   }
   input[type="number"] {
     width: 3rem;

@@ -91,8 +91,9 @@ const App = () => {
 
   return (
     <>
+      <h1>p5.js Recorder β</h1>
       <header>
-        <div className="header_item" style={{ flex: 1 }}>
+        <div className="header_item">
           <button disabled={isRecording} onClick={() => startRecording()}>
             🔴REC
           </button>
