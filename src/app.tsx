@@ -145,6 +145,10 @@ const App = () => {
         <span className="label">VIDEO:webm</span>
         <video ref={video} autoPlay controls loop></video>
       </div>
+      <footer>
+        Crafted by <a href="https://twitter.com/nagayama/">@nagayama</a> in
+        Kyoto
+      </footer>
     </>
   );
 };
