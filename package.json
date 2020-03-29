@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html -d public"
+    "build": "parcel build index.html -d public && cp -R src/static public"
   },
   "repository": {
     "type": "git",
